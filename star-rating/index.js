@@ -7,7 +7,7 @@ function StarRating($container) {
   let count = 0;
   for (let i = 0; i < starNum; i++) {
     let icon = document.createElement("i");
-    icon.classList.add("bx bxs-star");
+    icon.classList.add("bx", "bxs-star");
     $container.appendChild(icon);
 
     $container
@@ -42,7 +42,6 @@ function StarRating($container) {
         }
 
         let currentRating = String(i + 1);
-
         let change = new CustomEvent("rating-change", {
           detail: currentRating,
         });

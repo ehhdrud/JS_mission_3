@@ -1,4 +1,4 @@
-export default function Link() {
+function Link() {
   let newLink = document.createElement("link");
   newLink.href = "star-rating/theme.css";
   newLink.rel = "stylesheet";
@@ -8,3 +8,5 @@ export default function Link() {
     head.querySelectorAll("link")[head.querySelectorAll("link").length - 1];
   lastLink.insertAdjacentElement("afterend", newLink);
 }
+
+export default Link;
