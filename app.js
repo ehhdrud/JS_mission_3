@@ -12,8 +12,9 @@ $containers.forEach(($container, i) => {
   // $containers에 담겨있는 개별 요소인 $container를 StarRating 함수에 전달해 star-rating 요소를 동적 생성한다.
   StarRating($container);
 
-  // 이벤트 'rating-change'를 캐치해 화면에 표시한다.
+  // rating-change 커스텀 이벤트 리스너 등록
   $container.addEventListener("rating-change", (e) => {
+    // rating-change 이벤트의 detail에 담긴 currentRating을 rating 변수에 할당하고 $currentRatings의 텍스트로 넣어줌
     const rating = e.detail;
     $currentRatings[i].textContent = rating;
   });
