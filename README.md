@@ -1,6 +1,6 @@
 # Star rating
 
-별점 평가 컴포넌트를 구현
+별점 평가 컴포넌트를 구현한다.
 
 - 사용자가 정의한 star-rating 컨테이너 요소의 참조를 StarRating 함수에 전달해 star 요소들로 구성된 star-rating 요소를 동적 생성
 - 재사용이 가능하도록 구현
